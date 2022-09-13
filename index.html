@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>CV Simon Sjulin</title>
+</head>
+
+<body>
+    <!--Huvudcontainer för flexbox-->
+    <div class="main-container">
+        <!---undercontainer för att kunna dela sidan till 2layout-->
+        <div class="second-container">
+            <img src="images/profil.jpg" alt="profilbild" class="profile">
+            <div class="contact">
+                <h2>Contact me</h2>
+                <ul>
+                    <li><a href="tel:+46707896297" class="noText">Phone: 070-7896297</a></li>
+                    <li><a href="mailto:sjulin.simon@gmail.com" class="noText">Email: sjulin.simon@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/simon-sjulin-74967a138/">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/simon.sjulin">Facebook</a></li>
+                </ul>
+
+                <!--icons downloaded from <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>-->
+            </div>
+            <div class="About">
+                <h1>SIMON SJULIN</h1>
+                <h2>About me</h2>
+                <p>
+                    After 12 years in sales I've made the decision to change my career path. <br>
+                    I'm currently studying webdevelopment with the ambition become a fullstack
+                    developer.
+                </p>
+                <p>
+                    Once I set my mind into accomplishing something - whatever it might be,
+                    I won't stop until I've reached my goal. <br>
+                    Some people said it would be impossible to work fulltime, being a single parent and
+                    study wedev. at full speed - all at the same time. Let me start by showing you right
+                    now that it is all possible.
+                </p>
+                <h2>Experiences</h2>
+                <ul>
+                    <li>2011 - 2018: Insurance consultant at TryggHansa</li>
+                    <li>2018-03 - 2018-09: Temp as Salesman at Kjell Bergström Bil</li>
+                    <li>2018-09 - 2019-10: Salesman at Atteviks (SEAT/CUPRA)</li>
+                    <li>2019 - 2020: Head of KIA-department for Kronobergs Bil</li>
+                    <li>2020 - Current: Customer Success for Visma Spcs</li>
+                </ul>
+                <h2>Education</h2>
+                <ul>
+                    <li>Upper Secondary School</li>
+                    <li>Sales courses via Trygghansa and Atteviks</li>
+                    <li>Webdevelopment.NET (Currently in progress)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--den andra undercontainern-->
+
+        <div class="third-container">
+
+            <div class="rightCard">
+                <h2>Reflections</h2>
+                <p>
+                    The first thing I started to plan was how to write my html code 
+                    in a way so that I could use flexbox in order to make my resumé 
+                    responsive <br><br>
+                    Since I wanted a layout where the page divided into two halfs
+                    I started with creating a div which would act as the main container. <br>
+                    After that I created two additional divs who then would act as the right and left side.
+                    <br><br>
+                    After that I created two more divs nested inside the 2nd divs. The reason
+                    for this was because I wanted to create two "cards" in order to highlight 
+                    the content. To make it a bit more pretty I added some box-shadow, background-color
+                    and padding.
+                    <br><br>
+                    So the main-container then gets the display of flex and the standard direction of row
+                    since I wanted a two-sided layout.
+                    <br><br>
+                    The nested div/flexbox then got the flex-direction of column since
+                    I want them stacked vertically.
+                    <br>
+                    However I used mediaquery to change the display of the of the entire page to 
+                    having a flex-direction of column (stacked vertically) if you are looking at 
+                    an ipad or a mobile phone.
+                </p>
+            </div>
+            <div class="links">
+                <h2>Links to previous work</h2>
+                <ul>
+                    <li><a href="https://github.com/sjulin93">Github</a></li>
+                    <li><a href="https://sjulin93.github.io/ridskola/">Fryele Ridskola</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

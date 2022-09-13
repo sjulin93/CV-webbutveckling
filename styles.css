@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/newback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color:#555;
+}
+h2{
+    color: #333;
+}
+
+/*flexbox main container to divide the page in two*/
+.main-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+/*left side*/
+
+.profile{
+    border-radius: 50%;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 15px;
+    margin-bottom: 5%;
+    
+}
+
+.second-container{
+    display:flex;
+    flex-direction: column;
+    padding:2% 4%;
+    align-items: center;
+  
+    
+}
+.About{
+    background-color:#f7f3f3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+    padding:5% 5%;
+
+}
+.About h1{
+    text-align: center;
+}
+.About h2{
+    text-align: center;
+    padding-bottom: 3%;
+
+}
+.About h2{
+    padding-top: 5%;
+}
+.About p{
+    line-height: 1.8rem;
+}
+.About ul li {
+    margin-left: 3.5%;
+    padding-top: 3%;
+}
+/*right side*/
+.third-container{
+    display:flex;
+    flex-direction: column;
+    padding:0 4%;
+    align-items: center;
+    
+}
+.rightCard{
+    margin-top:5%;
+    background-color:#f7f3f3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+    padding:5% 5%;
+}
+.rightCard h1,.rightCard h2{
+    text-align: center;
+    padding-bottom: 3%;
+}
+.rightCard p{
+    line-height: 1.8rem;
+}
+
+/*contact box*/
+.contact{
+    background-color:#f7f3f3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+    padding:2% 7%;
+    margin-bottom: 5%;
+}
+.contact ul li{
+    padding-top:1rem;
+    list-style-type: none;
+}
+.contact ul li a{
+    color:#333;
+}
+.noText{
+    text-decoration: none;
+}
+.contact ul li a img{
+    width: 10%;
+}
+.mediaLinks{
+    text-align: center;
+}
+
+/*Link box*/
+.links{
+    margin-top:5%;
+    background-color:#f7f3f3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+    padding:2% 7%;
+    margin-bottom: 5%;
+}
+.links ul li{
+    padding-top:1rem;
+    list-style-type: none;
+}
+.links ul li a{
+
+    color:#333;
+    font-size: 1.2rem;
+}
+
+/*media queries*/
+@media screen and (max-width:1024px){
+    .main-container{
+        display:flex;
+        flex-direction: column;
+    }
+    .second-container{
+        width: 100%;
+    }
+    .third-container{
+        width: 100%;
+    }
+}
